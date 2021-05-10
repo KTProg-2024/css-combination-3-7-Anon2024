@@ -32,61 +32,101 @@
 	<head>
 	  <title>Selectors Exercise</title>
 	  <style>
-	  
+      .body {
+        background-color: #bdc3c7;
+      }
+      h1 {
+        color: #9b59b6;
+      }
+      h2 {
+        color: orange;
+      }
+      li {
+        color: #0062ff;
+      }
+      p {
+        background-color: yellow;
+      }
+      .hello {
+        background-color: #ffffff;
+      }
+      #special {
+        border-style: solid;
+        border-width: 2px;
+        color: #0062ff;
+      }
+      div p {
+        font-size: 25px;
+      }
+      .third p {
+        background-color: pink;
+      }
+      div p+p {
+        border-style: solid;
+        border-width: 5px;
+        border-color: #ffffff
+      }
+      .third a {
+        font-size: 25px;
+      }
+      a ~ a {
+        font-size: 30px
+      }
 	  </style>
 	</head>
 	<body>
-		<h1>Selectors Exercise</h1>
+    <div class="body">
+      <h1>Selectors Exercise</h1>
 
-		<p>PARAGRAPH NOT INSIDE A DIV</p>
+      <p>PARAGRAPH NOT INSIDE A DIV</p>
 
-		<div class="first">
-		  <p class="hello">I am a paragraph with a class</p>
-		  <p id="special">I am a paragraph with an ID</p>
+      <div class="first">
+        <p class="hello">I am a paragraph with a class</p>
+        <p id="special">I am a paragraph with an ID</p>
 
-		  <h2>I am an awesome h2</h2>
-		  		  
-		  <p>The quick brown fox jumped over the lazy dog. The lazy dog still did not chase the quick fox.  Lazy Dog!</p>
-		</div>
+        <h2>I am an awesome h2</h2>
+              
+        <p>The quick brown fox jumped over the lazy dog. The lazy dog still did not chase the quick fox.  Lazy Dog!</p>
+      </div>
 
-		<div class="second">
-		  <h2>Things I need to do</h2>
+      <div class="second">
+        <h2>Things I need to do</h2>
 
-		  <ul>
-			<li>Walk Dog </li>
-			<li>Feed Dog </li>
-			<li>Wash Dog </li>
-		  </ul>
-		</div>
+        <ul>
+        <li>Walk Dog </li>
+        <li>Feed Dog </li>
+        <li>Wash Dog </li>
+        </ul>
+      </div>
 
-		<div class="third">
-		  <h2>I am another awesome h2</h2>
+      <div class="third">
+        <h2>I am another awesome h2</h2>
 
-		  <p>The quick brown fox jumped over the lazy dog. The lazy dog chased the quick fox this time.  Good Dog!</p>
+        <p>The quick brown fox jumped over the lazy dog. The lazy dog chased the quick fox this time.  Good Dog!</p>
 
-		  <p>I'm the second paragraph inside this div!</p>
+        <p>I'm the second paragraph inside this div!</p>
 
-		  <a href="https://www.keefetech.org/">I am a link to Keefe Tech</a>
+        <a href="https://www.keefetech.org/">I am a link to Keefe Tech</a>
 
-		</div>
+      </div>
 
-		<p>PARAGRAPH NOT INSIDE A DIV</p>
+      <p>PARAGRAPH NOT INSIDE A DIV</p>
 
 
-		<div class="fourth">
-		  <h2>A less awesome h2</h2>
+      <div class="fourth">
+        <h2>A less awesome h2</h2>
 
-		  <p>The quick brown fox jumped over the not so lazy dog. The not lazy dog scared the quick fox this time.  The fox never returned.  Great Dog!</p>
+        <p>The quick brown fox jumped over the not so lazy dog. The not lazy dog scared the quick fox this time.  The fox never returned.  Great Dog!</p>
 
-		  <p>One last paragraph here!</p>
+        <p>One last paragraph here!</p>
 
-		  <a href="https://www.facebook.com">I am a link to Facebook</a>
-		  <a href="https://www.amazon.com">I am a link to Amazon</a>
-		  <br>
+        <a href="https://www.facebook.com">I am a link to Facebook</a>
+        <a href="https://www.amazon.com">I am a link to Amazon</a>
+        <br>
 
-		</div>
+      </div>
 
-		<p>PARAGRAPH NOT INSIDE A DIV</p>
-
+      <p>PARAGRAPH NOT INSIDE A DIV</p>
+    </div>
 	</body>
 </html>
